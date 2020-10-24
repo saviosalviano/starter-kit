@@ -1,0 +1,8 @@
+<div class="container" style="margin-top: 15px">
+  <ul class="list-group">
+    <li *ngFor="let item of data; trackBy: identify" class="list-group-item">
+      <img class="avatar" [src]="item.avatar_url" />
+      <label>{{ item | userPipe }}</label>
+    </li>
+  </ul>
+</div>

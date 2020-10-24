@@ -1,0 +1,7 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h4>Usuários:</h4>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <app-users-row [hidden]="isLoading" [data]="users"></app-users-row>
+  </div>
+</div>
